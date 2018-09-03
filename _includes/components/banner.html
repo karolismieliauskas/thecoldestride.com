@@ -1,0 +1,13 @@
+<aside class="banner {% if include.aside %}banner--aside{% endif %}">
+  <h3 class="banner__title">{{ include.title }}</h3>
+
+  <div class="banner__body">
+    {{ include.body }}
+  </div>
+
+  <footer class="banner__footer">
+    <a href="{{ include.href }}" class="button button--medium {% if include.aside %}button--block{% endif %}">
+      {{ include.cta }}
+    </a>
+  </footer>
+</aside>

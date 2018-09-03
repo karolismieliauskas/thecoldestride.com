@@ -1,0 +1,40 @@
+{% assign keys = site.data.navigation %}
+
+<section class="header flag">
+  <div class="container">
+    <div class="header__content flag">
+      <figure class="flag__content">
+        {% assign home = site.baseurl %}
+        {% if home == "" %}
+          {% assign home = '/' %}
+        {% endif %}
+        <a href="{{ home }}" class="header__logo">
+          {{ keys.title | replace: " ", "<br>" }}
+        </a>
+      </figure>
+
+      <nav class="flag__suffix">
+        <div class="menu">
+          <input class="menu__state" type="checkbox" id="mobile-nav-state" />
+
+          <label for="mobile-nav-state" class="menu__toggle button phone-only">
+            <i class="menu__icon"></i>
+            {{ keys.menu_toggle }}
+          </label>
+
+          <div class="menu__content">
+            <ul class="navigation">
+              {% for item in keys.items %}
+                <li class="navigation__item">
+                  <a class="navigation__link {% if page.url == item.url %}navigation__link--current{% endif %}" href="{{ item.url }}">
+                    {{ item.name | replace_first: ' ', ' <br class="desktop-only">' }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>

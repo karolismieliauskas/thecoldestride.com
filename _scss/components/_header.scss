@@ -1,0 +1,49 @@
+$header-brand-height: 2rem;
+
+.header {
+  position: fixed;
+  z-index: 10;
+  max-width: 100%;
+
+  font-size: 14px;
+  line-height: 0.9;
+  font-weight: 900;
+
+  @include tablet() {
+    top: 2rem;
+  }
+}
+
+.header__logo {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+
+  text-transform: uppercase;
+
+  vertical-align: middle;
+  color: $color-text-primary;
+  text-decoration: none;
+
+  @include tablet() {
+    width: 133px;
+  }
+}
+
+.header__content {
+  padding: 0 1.5rem;
+  background: rgba(#fff, 0.9);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  @include tablet() {
+    border-radius: 5px;
+  }
+}
+
+
+.header__menu {
+  float: right;
+}

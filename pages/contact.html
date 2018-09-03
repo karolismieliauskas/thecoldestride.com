@@ -1,0 +1,45 @@
+---
+layout: default
+namespace: contact
+permalink: /get-involved.html
+---
+
+{% assign keys = site.data[page.namespace] %}
+
+{% include layout/hero.html
+           centered=true
+           title=keys.hero.title
+           subtitle="" %}
+
+<div class="bg">
+  <div class="container">
+    <article class="article">
+      <section class="article__section">
+        <div class="article__body article__body--centered">
+          {{ keys.body | markdownify }}
+        </div>
+      </section>
+
+      <section class="article__section">
+        <div class="article__body article__body--centered">
+          <form action="#" method="POST" class="form">
+            <fieldset class="form__fieldset card">
+              {% include components/form/row.html name="Message" type="textarea" props=keys.form.message %}
+              {% include components/form/row.html name="_replyto" type="text" props=keys.form.contact %}
+
+              <input type="text" name="_gotcha" style="display:none;">
+              <input type="hidden" name="_subject" value="{{ keys.subject }}">
+              <input type="hidden" name="_next" value="/thanks.html">
+            </fieldset>
+
+            <footer class="form__footer">
+              <button class="button button--large">
+                {{ keys.form.action }}
+              </button>
+            </footer>
+          </form>
+        </div>
+      </section>
+    </article>
+  </div>
+</div>

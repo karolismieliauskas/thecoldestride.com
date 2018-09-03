@@ -1,0 +1,27 @@
+{% assign keys = site.data.footer %}
+
+<section class="footer">
+  <div class="container">
+    <header class="footer__header">
+      <h2 class="footer__title">
+        {{ keys.title }}
+      </h2>
+      <p class="footer__subtitle">
+        {{ keys.subtitle }}
+      </p>
+
+      {% include menus/social.html %}
+    </header>
+
+    <aside class="footer__meta flag">
+      <div class="flag__content">
+        <strong>{{ keys.meta.title }}</strong>
+        <br class="phone-only">
+        {{ keys.meta.subtitle }}
+      </div>
+      <div class="flag__suffix">
+        {{ keys.copyright }}
+      </div>
+    </aside>
+  </div>
+</section>

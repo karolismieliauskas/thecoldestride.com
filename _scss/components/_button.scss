@@ -1,0 +1,82 @@
+$button-border-width: 1px;
+$button-border-radius: 4px;
+$button-theme: $color-palette-primary;
+$button-padding-x: 1rem;
+$button-padding-y: 0.425rem;
+$button-padding-x-medium: 1.5rem;
+$button-padding-y-medium: 0.75rem;
+$button-padding-x-large: 1.75rem;
+$button-padding-y-large: 1rem;
+
+.button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: $button-padding-y $button-padding-x;
+  line-height: 1rem;
+  color: $color-text-highlighted;
+
+  background: none;
+  border: solid $button-border-width $button-theme;
+  border-radius: $button-border-radius;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: inherit;
+
+  text-decoration: none;
+  text-align: center;
+
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none !important;
+    background-color: rgba($button-theme, 0.1);
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  @include tablet() {
+    width: auto;
+  }
+}
+
+.button--medium {
+  padding: $button-padding-y-medium $button-padding-x-medium;
+  font-size: 16px;
+}
+
+.button--large {
+  font-size: 18px;
+  padding: $button-padding-y-large $button-padding-x-large;
+
+  &:not(:only-child) {
+    margin-bottom: $button-padding-y-large;
+
+    @include tablet() {
+      margin-right: $button-padding-x-large;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button--block {
+  width: 100%;
+}
+
+.button--small {
+  font-size: 14px;
+}
+
+.button--inverse {
+  border-color: $color-text-primary-inverse;
+  color: $color-text-primary-inverse;
+}
+
+.button--transparent {
+  background-color: transparent;
+  border-color: transparent;
+}

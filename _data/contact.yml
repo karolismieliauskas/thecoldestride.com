@@ -1,0 +1,22 @@
+hero:
+  title: Help make our adventure reality
+body: |
+  The Coldest Ride is only possible with sponsorship support.
+
+  You are not asked for the grant but for financial and/or gear support in exchange of your brand promotion and serious product testing in a harsh weather conditions.
+
+  Professional pictures, videos and reviews on your product will be shared in the media which will bring you new customers.
+
+  **This is a world record attempt!**
+
+  Lets make The Coldest Ride together. Lets work together, enter details in the form bellow and I'll get back to you
+form:
+  message:
+    label: How you'd like to help?
+    placeholder: Enter some details here...
+  contact:
+    label: How I should get back to you?
+    note: (no worries, your details won't be shared with anyone)
+    placeholder: Your phone or email...
+  action: Send message
+subject: New entry in thecoldestride.com

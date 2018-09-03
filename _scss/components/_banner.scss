@@ -1,0 +1,40 @@
+.banner {
+  padding: 2rem;
+  margin: 2rem 0;
+
+  background-color: rgba($color-palette-primary, 0.06);
+  border: solid 0 rgba($color-palette-primary, 0.3);
+  border-left-width: 1px;
+
+  font-size: 1rem;
+
+  @include tablet() {
+    padding: 4rem;
+    margin-top: 6rem;
+
+    &:not(.banner--aside) {
+      border-left-width: 0;
+      border-top-width: 1px;
+    }
+  }
+}
+
+.banner--aside {
+  @include tablet() {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    width: 30%;
+    margin-top: 0;
+    padding: 2rem;
+  }
+}
+
+.banner__title {
+  margin-bottom: 1rem;
+  color: $color-palette-primary;
+}
+
+.banner__footer {
+  margin-top: 2rem
+}

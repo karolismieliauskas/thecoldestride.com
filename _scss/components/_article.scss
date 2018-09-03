@@ -1,0 +1,117 @@
+$article-spacing: 1.5rem;
+$article-width: 780px;
+
+.article {
+  position: relative;
+  max-width: 100%;
+  margin: 0 0 $article-spacing;
+  padding: 0 1.5rem;
+
+  @include tablet() {
+    margin-top: $article-spacing;
+    margin-bottom: ($article-spacing * 1.5);
+  }
+}
+
+
+.article__title {
+  margin: 0;
+  line-height: 1;
+  font-size: 32px;
+}
+
+
+.article__subtitle {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-size: 1.25em;
+}
+
+
+.article__meta {
+  margin-top: ($article-spacing / 2);
+}
+
+
+.article__section {
+  margin-top: $article-spacing;
+  margin-bottom: $article-spacing;
+}
+
+.article__section--close {
+  margin-top: 0;
+
+  .article__section + & {
+    margin-top: -($article-spacing);
+  }
+}
+
+ul.article__subtitle {
+  text-align: left;
+}
+
+.article__logos {
+  list-style: none;
+  font-size: 0;
+}
+.article__logo {
+  font-size: 1rem;
+  display: inline-block;
+  width: 24%;
+  margin: 0.5%;
+}
+
+
+.article__body {
+  font-size: 1.25rem;
+  line-height: 1.45;
+
+  @include tablet() {
+    width: $width;
+  }
+
+  p {
+    margin-bottom: 1.3em;
+  }
+
+  h1, h2, h3, h4 {
+    & {
+      margin: 1.414em 0 0.5em;
+      line-height: 1.2;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  h1:not([class]) {
+    margin-top: 0;
+    font-size: 3.157em;
+  }
+
+  h2:not([class]) {
+    font-size: 2.369em;
+  }
+
+  h3:not([class]) {
+    font-size: 1.777em;
+  }
+
+  h4:not([class]) {
+    font-size: 1.333em;
+  }
+
+  small {
+    font-size: 0.75em;
+  }
+}
+
+
+.article__body--centered {
+  @include tablet() {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

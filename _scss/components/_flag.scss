@@ -1,0 +1,47 @@
+.flag {
+  @include tablet() {
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.flag__content {
+  @include tablet() {
+    display: table-cell;
+    width: auto;
+    vertical-align: inherit;
+  }
+}
+
+.flag__suffix {
+  margin-top: 1rem;
+
+  @include tablet() {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: inherit;
+    margin-top: 0;
+
+    &:first-child {
+      padding-right: 64px;
+    }
+
+    &:last-child {
+      padding-left: 64px;
+      text-align: right;
+    }
+  }
+}
+
+.flag__suffix--thumb {
+  min-width: 80px;
+
+  &:first-child {
+    padding-right: 1rem;
+  }
+
+  &:last-child {
+    padding-left: 1rem;
+  }
+}

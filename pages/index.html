@@ -1,0 +1,52 @@
+---
+layout: default
+namespace: index
+permalink: /index.html
+---
+
+{% assign keys = site.data[page.namespace] %}
+
+{% include layout/hero.html
+           title=keys.hero.title
+           subtitle=keys.hero.subtitle %}
+
+<div class="bg">
+  <div class="container">
+    <article class="article">
+      <section class="article__body">
+        <h1 class="article__title">
+          {{ keys.intro.title }}
+        </h1>
+
+        {{ keys.intro.body | markdownify }}
+
+        <figure class="placeholder placeholder--widescreen">
+          <figcaption class="placeholder__content">(map)</figcaption>
+        </figure>
+
+        {% assign body = keys.banner.body | markdownify %}
+        {% include components/banner.html
+                   aside=true
+                   title=keys.banner.title
+                   body=body
+                   cta=keys.banner.action
+                   href="/get-in-touch.html" %}
+      </section>
+    </article>
+
+
+    <article class="article">
+      <section class="article__body">
+        <h1 class="article__title">
+          {{ keys.rider.title }}
+        </h1>
+
+        {{ keys.intro.body | markdownify }}
+
+        <figure class="placeholder placeholder--widescreen">
+          <figcaption class="placeholder__content">(previous trips)</figcaption>
+        </figure>
+      </section>
+    </article>
+  </div>
+</div>

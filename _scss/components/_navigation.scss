@@ -1,0 +1,47 @@
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet() {
+    height: 68px;
+  }
+}
+
+.navigation__item {
+  display: block;
+
+
+  @include tablet() {
+    display: inline-block;
+    height: 100%;
+
+    &:last-child {
+      color: $color-palette-primary;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+
+
+.navigation__link {
+  display: block;
+  height: 100%;
+  padding: 1.25rem 0.5rem;
+
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+
+  border-bottom: solid 4px transparent;
+  line-height: 1;
+
+  &:hover,
+  &--current {
+    border-color: currentColor;
+  }
+}

@@ -1,0 +1,19 @@
+$color-palette-primary: #1293FF;
+$color-palette-secondary: #051523;
+
+$color-text-primary: #231F20;
+$color-text-secondary: #404041;
+$color-text-highlighted: $color-palette-primary;
+$color-text-mutted: rgba($color-text-secondary, 0.5);
+
+$color-text-primary-inverse: #ffffff;
+$color-text-secondary-inverse: rgba($color-text-primary-inverse, 0.7);
+$color-text-mutted-inverse: rgba($color-text-primary-inverse, 0.3);
+
+$color-bg-primary: #ffffff;
+$color-bg-secondary: #636c78;
+$color-bg-mutted: #FAFAFB;
+
+$color-text-base: $color-text-secondary;
+
+$color-ui-details: #e5e7e9;

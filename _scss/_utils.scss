@@ -1,0 +1,25 @@
+.desktop-only {
+  @include phone() {
+    display: none !important;
+  }
+}
+
+.tablet-only {
+  @include desktop() {
+    display: none !important;
+  }
+
+  @include phone() {
+    display: none !important;
+  }
+}
+
+.phone-only {
+  @include desktop() {
+    display: none !important;
+  }
+
+  @include tablet() {
+    display: none !important;
+  }
+}

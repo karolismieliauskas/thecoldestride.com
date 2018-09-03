@@ -1,0 +1,14 @@
+<figure class="hero {% if include.theme %}hero--{{include.theme}}{% endif %}">
+  <figcaption class="hero__content">
+    <div class="container">
+      <header class="hero__header article {% if include.centered %}hero__header--centered{% endif %}">
+        <h1 class="hero__title">
+          {{ include.title | split: "" | reverse | join: "" | replace_first: " ", ";psbn&" | split: "" | reverse | join: "" }}
+        </h1>
+        <p class="hero__subtitle">
+          {{ include.subtitle }}
+        </p>
+      </header>
+    </div>
+  </figcaption>
+</figure>

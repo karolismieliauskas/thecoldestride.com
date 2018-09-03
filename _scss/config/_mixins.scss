@@ -1,0 +1,175 @@
+@mixin clearfix() {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin phone() {
+  @media only screen and (max-width: $layout-breakpoint-phone) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media only screen and (min-width: ($layout-breakpoint-phone + 1)) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media only screen and (min-width: ($layout-breakpoint-tablet + 1)) {
+    @content;
+  }
+}
+
+@mixin ratio($width, $height) {
+  $bottom-padding: percentage($height / $width);
+  padding-bottom: $bottom-padding;
+}
+
+@mixin state($state) {
+  &.is-#{$state} {
+    @content;
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin overflow($direction: false) {
+  @if #direction {
+    overflow-#{$direction}: auto;
+  } @else {
+    overflow: auto;
+  }
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin vertical-center() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin arrow-down($size) {
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid;
+}
+
+@mixin round() {
+  border-radius: 9999px;
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  opacity: 0;
+  left: -9999px;
+}
+
+@mixin toggleable() {
+  position: relative;
+
+  &__state {
+    @include visually-hidden();
+  }
+}
+
+@mixin toggled() {
+  :checked ~ & {
+    @content;
+  }
+}
+
+@mixin navigation-list() {
+
+}
+
+@mixin navigation-item() {
+
+}
+
+@mixin navigation-link() {
+
+}
+
+@mixin navigation-current() {
+  @content;
+}
+
+@mixin stretch($position: absolute) {
+  position: $position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin center($position: relative) {
+  top: 50%;
+  left: 50%;
+  position: $position;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin scrollable($direction, $snapping: false) {
+  -webkit-overflow-scrolling: touch;
+
+  @if $direction == x {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  @if $direction == y {
+    overflow-y: auto;
+  }
+  @if $direction == both {
+    overflow: auto;
+  }
+
+  @if $snapping == true {
+    -webkit-scroll-snap-type: mandatory;
+    -webkit-scroll-snap-destination: 50% 50%;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-snap-destination: 50% 50%;
+  }
+}
+
+@mixin snapping() {
+  -webkit-scroll-snap-coordinate: 50% 50%;
+  scroll-snap-coordinate: 50% 50%;
+  scroll-snap-align: center;
+}
+
+@mixin check($size: 1.25em) {
+  padding: 0 0 0 1.25em;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0.35em;
+    left: -0.75em;
+
+    width: $size;
+    height: $size;
+
+    background: url('/images/icons/check.svg') 0 0 no-repeat;
+    background-size: contain;
+
+    @include tablet() {
+      // left: ($layout-column-size - $bullet-list-icon-size - 20px)
+    }
+  }
+}
+
+@mixin card() {
+  background: #ffffff;
+  border: solid 1px $color-ui-details;
+  box-shadow: $card-shadow;
+}

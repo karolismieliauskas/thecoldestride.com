@@ -1,0 +1,88 @@
+.hero {
+  width: 100%;
+  height: 72vh;
+  min-height: 540px;
+  display: table;
+  position: relative;
+  table-layout: fixed;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    min-height: inherit;
+
+    background: url(/images/backgrounds/hero.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.hero--about {
+  &:before {
+    background-image: url(/images/backgrounds/about.jpg);
+  }
+}
+
+.hero--morocco {
+  &:before {
+    background-image: url(/images/backgrounds/morocco.jpg);
+  }
+}
+
+.hero__content {
+  display: table-cell;
+  width: 100%;
+  vertical-align: bottom;
+  position: relative;
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 100%, 0) 0%,
+    hsla(0, 0%, 100%, 0.013) 8.1%,
+    hsla(0, 0%, 100%, 0.049) 15.5%,
+    hsla(0, 0%, 100%, 0.104) 22.5%,
+    hsla(0, 0%, 100%, 0.175) 29%,
+    hsla(0, 0%, 100%, 0.259) 35.3%,
+    hsla(0, 0%, 100%, 0.352) 41.2%,
+    hsla(0, 0%, 100%, 0.45) 47.1%,
+    hsla(0, 0%, 100%, 0.55) 52.9%,
+    hsla(0, 0%, 100%, 0.648) 58.8%,
+    hsla(0, 0%, 100%, 0.741) 64.7%,
+    hsla(0, 0%, 100%, 0.825) 71%,
+    hsla(0, 0%, 100%, 0.896) 77.5%,
+    hsla(0, 0%, 100%, 0.951) 84.5%,
+    hsla(0, 0%, 100%, 0.987) 91.9%,
+    hsl(0, 0%, 100%) 100%
+  );
+}
+
+.hero__header {
+  @include tablet() {
+    width: $width;
+  }
+}
+
+.hero__header--centered {
+  @include tablet() {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}
+
+
+.hero__title {
+  margin: 0 0 2rem;
+  font-size: 40px;
+
+  @include tablet() {
+    font-size: 50px;
+  }
+}
+
+.hero__subtitle {
+  font-size: 20px;
+}

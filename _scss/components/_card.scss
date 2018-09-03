@@ -1,0 +1,77 @@
+$card-border-radius: 6px;
+$card-padding: 24px;
+$card-padding-tablet: 32px;
+$card-shadow: 0 1px 2px 0 rgba(146, 152, 160, 0.15);
+$card-shadow-active: 0 4px 8px 0 rgba(146, 152, 160, 0.17), $card-shadow;
+
+
+.card {
+  position: relative;
+  display: block;
+  padding: $card-padding;
+  margin: 0;
+  border: solid 1px transparent;
+  border-radius: $card-border-radius;
+  min-height: 100%;
+
+  @include tablet() {
+    padding: $card-padding-tablet;
+  }
+
+  @at-root {
+    a#{&},
+    button#{&} {
+      cursor: pointer;
+      text-align: inherit;
+      text-decoration: none;
+      font-weight: inherit;
+      font-family: inherit;
+      color: inherit;
+
+      &:hover {
+        border-color: $color-palette-primary;
+        box-shadow: $card-shadow-active;
+
+        @include card();
+      }
+    }
+  }
+
+  &:not(.card--transparent) {
+    @include card();
+  }
+}
+
+.card--illustrated {
+  padding-right: ($card-padding-tablet) + 64px;
+}
+
+
+.card__title {
+  font-size: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.card__title--checked {
+  @include check();
+}
+
+
+.card__body {
+  margin: 0.5rem 0 0 0;
+}
+
+
+.card__illustration {
+  position: absolute;
+  top: 50%;
+  right: $card-padding;
+  transform: translateY(-50%);
+
+  @include tablet() {
+    right: $card-padding-tablet;
+  }
+}
