@@ -15,7 +15,6 @@
 
     background: url(/images/backgrounds/hero.jpg) 50% 50% no-repeat;
     background-size: cover;
-    background-attachment: fixed;
   }
 }
 
@@ -28,6 +27,18 @@
 .hero--morocco {
   &:before {
     background-image: url(/images/backgrounds/morocco.jpg);
+  }
+}
+
+.hero--baikal {
+  &:before {
+    background-image: url(/images/backgrounds/baikal.jpg);
+  }
+}
+
+.hero--vladivostok {
+  &:before {
+    background-image: url(/images/backgrounds/vladivostok.jpg);
   }
 }
 
