@@ -1,6 +1,6 @@
 ---
 layout: default
-namespace: contact
+namespace: getinvolved
 permalink: /get-involved.html
 ---
 
@@ -23,8 +23,6 @@ permalink: /get-involved.html
       <section class="article__section">
         <div class="article__body article__body--centered">
           <form class="banner banner--mutted form" action="https://formspree.io/{{ keys.form.email }}" method="POST">
-            <h3 class="banner__title">{{ keys.form.title }}</h3>
-
             <div class="banner__body">
               <fieldset class="form__fieldset">
                 {% include components/form/row.html name="message" type="textarea" props=keys.form.message %}

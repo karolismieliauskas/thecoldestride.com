@@ -1,0 +1,15 @@
+hero:
+  title: Get in touch
+body: |
+  I'm always happy to hear from fellow riders, fans or possible partners, who would liek to work with me and have ideas how to do this. Feel free to ask questions, share your ideas  - I'll be more than happy to hear them.
+form:
+  email: karolis.mieliauskas@gmail.com
+  message:
+    label: "Enter your message for me:"
+    placeholder: ""
+  contact:
+    label: How should I get back to you?
+    note: (no worries, I won't share or use your email for anything else)
+    placeholder: ""
+  action: Send message
+subject: New entry in thecoldestride.com
