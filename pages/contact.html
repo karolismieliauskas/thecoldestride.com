@@ -22,21 +22,23 @@ permalink: /get-involved.html
 
       <section class="article__section">
         <div class="article__body article__body--centered">
-          <form action="#" method="POST" class="form">
-            <fieldset class="form__fieldset card">
-              {% include components/form/row.html name="Message" type="textarea" props=keys.form.message %}
-              {% include components/form/row.html name="_replyto" type="text" props=keys.form.contact %}
+          <form class="banner banner--mutted form" action="#" method="POST">
+            <h3 class="banner__title">{{ keys.form.title }}</h3>
 
-              <input type="text" name="_gotcha" style="display:none;">
-              <input type="hidden" name="_subject" value="{{ keys.subject }}">
-              <input type="hidden" name="_next" value="/thanks.html">
-            </fieldset>
+            <div class="banner__body">
+              <fieldset class="form__fieldset">
+                {% include components/form/row.html name="Message" type="textarea" props=keys.form.message %}
+                {% include components/form/row.html name="_replyto" type="text" props=keys.form.contact %}
 
-            <footer class="form__footer">
+                <input type="text" name="_gotcha" style="display:none;">
+                <input type="hidden" name="_subject" value="{{ keys.subject }}">
+                <input type="hidden" name="_next" value="/thanks.html">
+              </fieldset>
+
               <button class="button button--large">
                 {{ keys.form.action }}
               </button>
-            </footer>
+            </div>
           </form>
         </div>
       </section>

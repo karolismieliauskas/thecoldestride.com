@@ -1,5 +1,5 @@
 hero:
-  title: Help make our adventure reality
+  title: Help make our adventure&nbsp;reality
 body: |
   The Coldest Ride is only possible with sponsorship support.
 
@@ -11,9 +11,10 @@ body: |
 
   Lets make The Coldest Ride together. Lets work together, enter details in the form bellow and I'll get back to you
 form:
+  title: Get in touch
   message:
     label: How you'd like to help?
-    placeholder: Enter some details here...
+    placeholder: Share your ideas here...
   contact:
     label: How I should get back to you?
     note: (no worries, your details won't be shared with anyone)

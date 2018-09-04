@@ -9,14 +9,20 @@
   font-size: 1rem;
 
   @include tablet() {
-    padding: 4rem;
-    margin-top: 6rem;
+    &:not(.banner--mutted) {
+      margin-top: 6rem;
+      padding: 4rem;
+    }
 
-    &:not(.banner--aside) {
+    &:not(.banner--aside):not(.banner--mutted) {
       border-left-width: 0;
       border-top-width: 1px;
     }
   }
+}
+
+.banner--mutted {
+
 }
 
 .banner--aside {
