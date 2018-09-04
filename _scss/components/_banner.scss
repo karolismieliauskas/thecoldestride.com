@@ -1,4 +1,6 @@
 .banner {
+  position: relative;
+  z-index: 1;
   padding: 2rem;
   margin: 2rem 0;
 
@@ -9,20 +11,13 @@
   font-size: 1rem;
 
   @include tablet() {
-    &:not(.banner--mutted) {
+    &:not(.banner--aside):not(.banner--mutted) {
       margin-top: 6rem;
       padding: 4rem;
-    }
-
-    &:not(.banner--aside):not(.banner--mutted) {
       border-left-width: 0;
       border-top-width: 1px;
     }
   }
-}
-
-.banner--mutted {
-
 }
 
 .banner--aside {
@@ -37,8 +32,9 @@
 }
 
 .banner__title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem !important;
   color: $color-palette-primary;
+  font-size: 1.25rem;
 }
 
 .banner__footer {
