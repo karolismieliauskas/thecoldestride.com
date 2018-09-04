@@ -1,0 +1,32 @@
+.media {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 160px;
+  padding: 2rem 12rem 2rem;
+  background: rgba(#fff, 0.9);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+  border-radius: 5px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  & + & {
+    margin-top: 2rem;
+  }
+
+  @include tablet() {
+    width: 60%;
+  }
+}
+
+
+.media__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}

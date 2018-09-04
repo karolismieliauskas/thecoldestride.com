@@ -9,12 +9,15 @@ items:
     items:
       - name: Ride in Morocco
         subtitle: 2000km in Africa
+        description: One of the first of my "bigger" travels, yet one of the most memorable.
         url: /adventures/morocco.html
       - name: Crossing Frozen Baikal
         subtitle: Some quality winter time
+        description: Short description
         url: /adventures/baikal.html
       - name: Vilnius - Vladivostok
         subtitle: 12412km of fun and solitude
+        description: Vladivostok trip short description
         url: /adventures/vladivostok.html
 
   - name: Get Involved

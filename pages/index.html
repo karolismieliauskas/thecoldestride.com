@@ -56,10 +56,23 @@ permalink: /home.html
         </h1>
 
         {{ keys.rider.body | markdownify }}
+      </section>
 
-        <figure class="placeholder placeholder--widescreen">
-          <figcaption class="placeholder__content">(previous trips)</figcaption>
-        </figure>
+      <section class="article__section">
+        {% assign keys = site.data.navigation %}
+        {% for item in keys.items %}
+
+          {% if item.items %}
+            {% for subitem in item.items %}
+              <a href="{{ subitem.url }}" class="media">
+                <img class="media__image" src="" alt="">
+                <h4>{{ subitem.name }}</h4>
+                <p>{{ subitem.description }}</p>
+              </a>
+            {% endfor %}
+          {% endif %}
+          </li>
+        {% endfor %}
       </section>
     </article>
   </div>
