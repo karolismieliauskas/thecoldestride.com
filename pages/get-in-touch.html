@@ -22,24 +22,7 @@ permalink: /get-in-touch.html
 
       <section class="article__section">
         <div class="article__body article__body--centered">
-          <form class="banner banner--mutted form" action="https://formspree.io/{{ keys.form.email }}" method="POST">
-            <h3 class="banner__title">{{ keys.form.title }}</h3>
-
-            <div class="banner__body">
-              <fieldset class="form__fieldset">
-                {% include components/form/row.html name="message" type="textarea" props=keys.form.message %}
-                {% include components/form/row.html name="contacts" type="text" props=keys.form.contact %}
-
-                <input type="hidden" name="_subject" value="{{ keys.subject }}">
-                <input type="hidden" name="_next" value="/thanks.html">
-                <input type="text" name="_gotcha" style="display:none;">
-              </fieldset>
-
-              <button class="button button--medium">
-                {{ keys.form.action }}
-              </button>
-            </div>
-          </form>
+          {% include/form.html keys=keys %}
         </div>
       </section>
     </article>
