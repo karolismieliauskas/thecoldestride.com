@@ -22,31 +22,12 @@ permalink: /adventures/morocco.html
       </section>
 
       <section class="article__section">
-        <div class="gallery">
-          <div class="gallery__items">
-            <figure class="gallery__item">
-              <img class="gallery__image" src="/images/adventures/{{page.namespace}}/1.jpg" alt="">
-            </figure>
-
-            <figure class="gallery__item">
-              <img class="gallery__image" src="/images/adventures/{{page.namespace}}/2.jpg" alt="">
-            </figure>
-
-            <figure class="gallery__item">
-              <img class="gallery__image" src="/images/adventures/{{page.namespace}}/3.jpg" alt="">
-            </figure>
-          </div>
-        </div>
+        {% include gallery.html page=page.namespace %}
       </section>
 
       <section class="article__section">
         <header class="article__body article__body--centered">
-          {% assign body = keys.banner.body | markdownify | add: 'aaaaa' %}
-          {% include components/banner.html
-                     title=keys.banner.title
-                     body=body
-                     cta=keys.banner.action
-                     href="/get-in-touch.html" %}
+          {% include banner.html %}
         </header>
       </section>
     </article>

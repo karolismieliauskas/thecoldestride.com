@@ -1,0 +1,7 @@
+{% assign keys = site.data.promo.banner %}
+{% assign body = keys.body | markdownify | add: 'aaaaa' %}
+{% include components/banner.html
+           title=keys.title
+           body=body
+           cta=keys.action
+           href="/get-involved.html" %}
