@@ -26,9 +26,26 @@
             <ul class="navigation">
               {% for item in keys.items %}
                 <li class="navigation__item">
-                  <a class="navigation__link {% if page.url == item.url %}navigation__link--current{% endif %}" href="{{ item.url }}">
-                    {{ item.name | replace_first: ' ', ' <br class="desktop-only">' }}
-                  </a>
+                  {% if item.url %}
+                    <a class="navigation__link {% if page.url == item.url %}navigation__link--current{% endif %}" href="{{ item.url }}">
+                      {{ item.name | replace_first: ' ', ' <br class="desktop-only">' }}
+                    </a>
+                  {% endif %}
+                  {% if item.items %}
+                    <span class="navigation__link {% if page.url == item.url %}navigation__link--current{% endif %}">
+                      {{ item.name | replace_first: ' ', ' <br class="desktop-only">' }}
+                    </span>
+                    <ul class="dropdown">
+                      {% for subitem in item.items %}
+                        <li class="dropdown__item">
+                          <a class="dropdown__link {% if page.url == item.url %}dropdown__link--current{% endif %}" href="{{ subitem.url }}">
+                            {{ subitem.name }}
+                            <span class="dropdown__subtitle">{{ subitem.subtitle }}</span>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
                 </li>
               {% endfor %}
             </ul>

@@ -10,7 +10,7 @@
 
 .navigation__item {
   display: block;
-
+  position: relative;
 
   @include tablet() {
     display: inline-block;
@@ -25,7 +25,6 @@
     }
   }
 }
-
 
 .navigation__link {
   display: block;
@@ -42,6 +41,8 @@
 
   &:hover,
   &--current {
-    border-color: currentColor;
+    &:not(span) {
+      border-color: currentColor;
+    }
   }
 }
