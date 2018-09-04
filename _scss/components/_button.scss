@@ -4,9 +4,7 @@ $button-theme: $color-palette-primary;
 $button-padding-x: 1rem;
 $button-padding-y: 0.425rem;
 $button-padding-x-medium: 1.5rem;
-$button-padding-y-medium: 0.75rem;
-$button-padding-x-large: 1.75rem;
-$button-padding-y-large: 1rem;
+$button-padding-y-medium: 0.85rem;
 
 .button {
   position: relative;
@@ -14,10 +12,10 @@ $button-padding-y-large: 1rem;
   width: 100%;
   padding: $button-padding-y $button-padding-x;
   line-height: 1rem;
-  color: $color-text-highlighted;
+  color: $color-text-primary-inverse;
 
-  background: none;
-  border: solid $button-border-width $button-theme;
+  background: rgba($button-theme, 0.8);
+  border: 0;
   border-radius: $button-border-radius;
 
   font-family: inherit;
@@ -31,12 +29,8 @@ $button-padding-y-large: 1rem;
   cursor: pointer;
 
   &:hover {
+    background-color: rgba($button-theme, 1);
     text-decoration: none !important;
-    background-color: rgba($button-theme, 0.1);
-  }
-
-  &:active {
-    top: 1px;
   }
 
   @include tablet() {
@@ -47,20 +41,6 @@ $button-padding-y-large: 1rem;
 .button--medium {
   padding: $button-padding-y-medium $button-padding-x-medium;
   font-size: 16px;
-}
-
-.button--large {
-  font-size: 18px;
-  padding: $button-padding-y-large $button-padding-x-large;
-
-  &:not(:only-child) {
-    margin-bottom: $button-padding-y-large;
-
-    @include tablet() {
-      margin-right: $button-padding-x-large;
-      margin-bottom: 0;
-    }
-  }
 }
 
 .button--block {
