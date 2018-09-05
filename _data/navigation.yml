@@ -11,13 +11,13 @@ items:
         subtitle: 2000km in Africa
         description: 5000 km in Morocco
         url: /adventures/morocco.html
-      - name: Across the frozen lake Baikal
+      - name: Extra catchy ride
         subtitle: Extra catchy ride
-        description: Short description
+        description: Across the frozen lake Baikal
         url: /adventures/baikal.html
-      - name: Vilnius - Vladivostok
+      - name: Magic '1000 km a day' ride
         subtitle: 12412km of fun and solitude
-        description: Vladivostok trip short description
+        description: Vilnius - Vladivostok 11000km 
         url: /adventures/vladivostok.html
 
   - name: Get Involved
