@@ -7,11 +7,11 @@ items:
     url: /about-karolis.html
   - name: Previous Adventures
     items:
-      - name: Sandy ride to meet the nomads
+      - name: Ride into the desert
         subtitle: 5000 km in Morocco
         description: 5000 km in Morocco
         url: /adventures/morocco.html
-      - name: Extra catchy cold ride
+      - name: Ride on the ice
         subtitle: Across the frozen lake Baikal
         description: Across the frozen lake Baikal
         url: /adventures/baikal.html
