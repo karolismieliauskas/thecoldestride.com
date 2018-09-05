@@ -11,8 +11,8 @@ items:
         subtitle: 2000km in Africa
         description: 5000 km in Morocco
         url: /adventures/morocco.html
-      - name: Crossing Frozen Baikal
-        subtitle: Some quality winter time
+      - name: Across the frozen lake Baikal
+        subtitle: Extra catchy ride
         description: Short description
         url: /adventures/baikal.html
       - name: Vilnius - Vladivostok
