@@ -8,15 +8,15 @@ items:
   - name: Previous Adventures
     items:
       - name: Sandy ride to meet the nomads
-        subtitle: 2000km in Africa
+        subtitle: 5000 km in Morocco
         description: 5000 km in Morocco
         url: /adventures/morocco.html
       - name: Extra catchy ride
-        subtitle: Extra catchy ride
+        subtitle: Across the frozen lake Baikal
         description: Across the frozen lake Baikal
         url: /adventures/baikal.html
       - name: Magic '1000 km a day' ride
-        subtitle: 12412km of fun and solitude
+        subtitle: Vilnius - Vladivostok 11000km
         description: Vilnius - Vladivostok 11000km 
         url: /adventures/vladivostok.html
 
