@@ -7,7 +7,7 @@ items:
     url: /about-karolis.html
   - name: Previous Adventures
     items:
-      - name: Ride into the desert
+      - name: Ride to the desert
         subtitle: 5000 km in Morocco
         description: 5000 km in Morocco
         url: /adventures/morocco.html
