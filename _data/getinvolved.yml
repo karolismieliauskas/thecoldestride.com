@@ -26,7 +26,7 @@ form:
     placeholder: Share your ideas here...
   contact:
     label: Email address *
-    note: (no worries, your details won't be shared with anyone)
+    note: (no worries, your details won't be shared with anyone, i promise)
     placeholder: Your email...
   action: Send message
 subject: New entry in thecoldestride.com
