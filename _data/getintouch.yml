@@ -8,7 +8,7 @@ form:
     label: "Enter your message for me:"
     placeholder: ""
   contact:
-    label: How should I get back to you?
+    label: Your email address*
     note: (no worries, your details won't be shared with anyone)
     placeholder: ""
   action: Send message
