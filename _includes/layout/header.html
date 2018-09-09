@@ -40,7 +40,7 @@
                         <li class="dropdown__item">
                           <a class="dropdown__link {% if page.url == item.url %}dropdown__link--current{% endif %}" href="{{ subitem.url }}">
                             {{ subitem.name }}
-                            <span class="dropdown__subtitle">{{ subitem.subtitle }}</span>
+                            <span class="dropdown__subtitle desktop-only">{{ subitem.subtitle }}</span>
                           </a>
                         </li>
                       {% endfor %}
