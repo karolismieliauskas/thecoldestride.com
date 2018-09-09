@@ -12,5 +12,5 @@ social:
     id: instagram
     url: "https://www.instagram.com/karolismieliauskas/"
   - title: Newsletter
-    id: Newsletter
+    id: newsletter
     url: "/newsletter.html"
