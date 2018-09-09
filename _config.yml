@@ -11,18 +11,6 @@ sass:
   style: compressed
   sass_dir: _scss
 
-defaults:
-  - scope:
-      path: ""
-      type: faq
-    values:
-      layout: default
-
-# collections:
-#   faq:
-#     output: true
-#     permalink: pretty
-
 # First language in the list is default
 languages: ["en", "lt"]
 exclude_from_localizations: ["css", "fonts", "images"]
