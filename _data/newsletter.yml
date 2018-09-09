@@ -3,7 +3,7 @@ hero:
 body: |
   Enter your email bellow and I'll email you updates about my adventures. I hate spam, so I'll never spam you or share your details with anyone
 
-  <small>(I use [MailChimp] to manage subscribers list - your details will be stored safely there)</small>
+  <small>(I use MailChimp to manage subscribers list - your details will be stored safely there)</small>
 form:
   email:
     label: Your email address*
