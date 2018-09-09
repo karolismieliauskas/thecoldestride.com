@@ -1,0 +1,44 @@
+---
+layout: default
+namespace: newsletter
+permalink: /newsletter.html
+---
+
+{% assign keys = site.data[page.namespace] %}
+
+{% include layout/hero.html
+           centered=true
+           title=keys.hero.title
+           subtitle="" %}
+
+<div class="bg">
+  <div class="container">
+    <article class="article">
+      <section class="article__section">
+        <div class="article__body article__body--centered">
+          {{ keys.body | markdownify }}
+        </div>
+      </section>
+
+      <section class="article__section">
+        <div class="article__body article__body--centered">
+          <form novalidate class="banner banner--mutted form" action="https://thecoldestride.us19.list-manage.com/subscribe/post?u=8b744ccf83c43d9263df1ee75&amp;id=8be1c78f4c" method="post">
+            <div class="banner__body">
+              <fieldset class="form__fieldset">
+                {% include components/form/row.html name="EMAIL" type="text" props=keys.form.email %}
+
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_8b744ccf83c43d9263df1ee75_8be1c78f4c" tabindex="-1" value="">
+                </div>
+              </fieldset>
+
+              <button class="button button--medium">
+                {{ keys.form.action }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </article>
+  </div>
+</div>
