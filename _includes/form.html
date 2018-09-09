@@ -1,4 +1,4 @@
-<form class="banner banner--mutted form" action="https://formspree.io/hello@edvinas.lt" method="POST">
+<form class="banner banner--mutted form" action="{{ site.forms.contact }}" method="post">
   <div class="banner__body">
     <fieldset class="form__fieldset">
       {% include components/form/row.html name="message" type="textarea" props=include.keys.form.message %}
