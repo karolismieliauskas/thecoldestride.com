@@ -2,11 +2,12 @@
 <div class="gallery">
   <div class="gallery__items">
     {% for i in (1..image_count) %}
-      <figure class="gallery__item">
+      {% assign src = "/images/adventures/{{name}}/{{i}}.jpg" | replace: "{{name}}", include.page | replace: "{{i}}", i %}
+      <a href="{{src}}" class="gallery__item">
         <img class="gallery__image"
-             src="/images/adventures/{{include.page}}/{{i}}.jpg"
+             src="{{ src }}"
              alt="Picture of me in {{ include.page | captitalize }}">
-      </figure>
+      </a>
     {% endfor %}
   </div>
 </div>
