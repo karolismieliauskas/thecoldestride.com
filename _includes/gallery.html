@@ -1,15 +1,12 @@
+{% assign image_count = 6 %}
 <div class="gallery">
   <div class="gallery__items">
-    <figure class="gallery__item">
-      <img class="gallery__image" src="/images/adventures/{{include.page}}/1.jpg" alt="">
-    </figure>
-
-    <figure class="gallery__item">
-      <img class="gallery__image" src="/images/adventures/{{include.page}}/2.jpg" alt="">
-    </figure>
-
-    <figure class="gallery__item">
-      <img class="gallery__image" src="/images/adventures/{{include.page}}/3.jpg" alt="">
-    </figure>
+    {% for i in (1..image_count) %}
+      <figure class="gallery__item">
+        <img class="gallery__image"
+             src="/images/adventures/{{include.page}}/{{i}}.jpg"
+             alt="Picture of me in {{ include.page | captitalize }}">
+      </figure>
+    {% endfor %}
   </div>
 </div>
