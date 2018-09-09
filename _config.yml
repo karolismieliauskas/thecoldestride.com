@@ -17,7 +17,7 @@ exclude_from_localizations: ["css", "fonts", "images"]
 
 forms:
   contact: https://formspree.io/hello@edvinas.lt
-  newsletter: https://thecoldestride.us19.list-manage.com/subscribe/post?u=8b744ccf83c43d9263df1ee75&amp;id=8be1c78f4c
+  newsletter: https://thecoldestride.us19.list-manage.com/subscribe/post?u=63a300643885f0ff16e144794&amp;id=9fa6dba6cd
 
 analytics:
   ga:
