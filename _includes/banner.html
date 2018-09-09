@@ -1,5 +1,5 @@
 {% assign keys = site.data.promo.banner %}
-{% assign body = keys.body | markdownify | add: 'aaaaa' %}
+{% assign body = keys.body | markdownify %}
 {% include components/banner.html
            title=keys.title
            body=body
