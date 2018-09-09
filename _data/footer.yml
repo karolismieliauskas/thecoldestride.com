@@ -11,3 +11,6 @@ social:
   - title: "Instagram"
     id: instagram
     url: "#"
+  - title: Newsletter
+    id: Newsletter
+    url: "/newsletter.html"

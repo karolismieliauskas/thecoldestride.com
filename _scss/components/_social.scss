@@ -43,4 +43,9 @@
   @include tablet() {
     width: auto;
   }
+
+  svg {
+    margin-top: -0.2em;
+    margin-right: 0.25em;
+  }
 }
