@@ -7,6 +7,7 @@ permalink: /home.html
 {% assign keys = site.data[page.namespace] %}
 
 {% include layout/hero.html
+           theme=page.namespace
            title=keys.hero.title
            subtitle=keys.hero.subtitle %}
 
@@ -53,7 +54,7 @@ permalink: /home.html
 
           {% if item.items %}
             {% for subitem in item.items %}
-              <a href="/adventures/{{ subitem.id }}.html" class="media">
+            <a href="/adventures/{{ subitem.id }}.html" class="media">
                 <img class="media__image" src="/images/adventures/{{ subitem.id }}/thumb.jpg" alt="">
                 <h4>{{ subitem.name }}</h4>
                 <p>{{ subitem.description }}</p>
