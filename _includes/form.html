@@ -1,8 +1,8 @@
-<form class="banner banner--mutted form" action="https://formspree.io/{{ keys.form.email }}" method="POST">
+<form class="banner banner--mutted form" action="https://formspree.io/hello@edvinas.lt" method="POST">
   <div class="banner__body">
     <fieldset class="form__fieldset">
       {% include components/form/row.html name="message" type="textarea" props=include.keys.form.message %}
-      {% include components/form/row.html name="contacts" type="text" props=include.keys.form.contact %}
+      {% include components/form/row.html name="_replyto" type="text" props=include.keys.form.contact %}
 
       <input type="hidden" name="_subject" value="{{ keys.subject }}">
       <input type="hidden" name="_next" value="/thanks.html">
