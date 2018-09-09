@@ -38,7 +38,7 @@
                     <ul class="dropdown">
                       {% for subitem in item.items %}
                         <li class="dropdown__item">
-                          <a class="dropdown__link {% if page.url == item.url %}dropdown__link--current{% endif %}" href="{{ subitem.url }}">
+                          <a class="dropdown__link {% if page.url == item.url %}dropdown__link--current{% endif %}" href="/adventures/{{ subitem.id }}.html">
                             {{ subitem.name }}
                             <span class="dropdown__subtitle desktop-only">{{ subitem.subtitle }}</span>
                           </a>
