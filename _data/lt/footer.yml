@@ -1,0 +1,16 @@
+title: Follow my adventures!
+subtitle: "I will share details, pictures and all the interesting updates online. You can follow me in your preferred way:"
+meta:
+  title: The Coldest Ride.
+  subtitle: Reaching the coldest spot on earth on motorbike
+copyright: 2018 &copy; Karolis Mieliauskas
+social:
+  - title: "Facebook"
+    id: facebook
+    url: "https://www.facebook.com/karolis.mieliauskas.1"
+  - title: "Instagram"
+    id: instagram
+    url: "https://www.instagram.com/karolismieliauskas/"
+  - title: Newsletter
+    id: newsletter
+    url: "/newsletter.html"
