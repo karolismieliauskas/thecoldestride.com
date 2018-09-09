@@ -66,7 +66,7 @@ permalink: /home.html
           {% if item.items %}
             {% for subitem in item.items %}
               <a href="{{ subitem.url }}" class="media">
-                <img class="media__image" src="" alt="">
+                <img class="media__image" src="/images/adventures/{{ subitem.id }}/thumb.jpg" alt="">
                 <h4>{{ subitem.name }}</h4>
                 <p>{{ subitem.description }}</p>
               </a>
