@@ -5,7 +5,9 @@
   {% endif %}
   {% if include.type == "text" %}
     <input class="input input--text" type="text" name="{{ include.name }}" id="{{ include.name }}" placeholder="{{ include.props.placeholder }}">
+  {% elsif include.type == "email" %}
+    <input required class="input input--text" type="email" name="{{ include.name }}" id="{{ include.name }}" placeholder="{{ include.props.placeholder }}">
   {% elsif include.type == "textarea" %}
-    <textarea class="input input--text input--multiline" name="{{ include.name }}" id="{{ include.name }}" placeholder="{{ include.props.placeholder }}"></textarea>
+    <textarea required class="input input--text input--multiline" name="{{ include.name }}" id="{{ include.name }}" placeholder="{{ include.props.placeholder }}"></textarea>
   {% endif %}
 </div>
