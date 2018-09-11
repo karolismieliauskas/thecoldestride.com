@@ -1,0 +1,89 @@
+.map {
+  position: relative;
+}
+
+.map__image {
+  margin: -120px 0 0 -55%;
+  max-width: 200%;
+
+  @include tablet() {
+    margin-left: -120px;
+    margin-top: -40px;
+    max-width: 795px;
+  }
+}
+
+.map__steps {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.map__step {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+  margin: 0 0 0.5rem;
+
+  background: rgba(#fff, 0.9) url("/images/scale.svg") 100% 0 repeat-y;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20),
+              inset 0 1px 0 rgba(0,0,0,0.05);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+
+
+  @include tablet() {
+    position: absolute;
+    width: 210px;
+    z-index: 10;
+
+    &:nth-child(1) {
+      top: 130px;
+      left: -10px
+    }
+
+    &:nth-child(2) {
+      top: 280px;
+      left: 90px;
+    }
+
+
+    &:nth-child(3) {
+      top: 170px;
+      left: 340px;
+    }
+
+    &:nth-child(4) {
+      top: 10px;
+      left: 405px;
+    }
+  }
+
+  &[data-mark] {
+    &:after {
+      content: attr(data-mark);
+      position: absolute;
+      right: 10px;
+      top: 13px;
+      font-size: 8px;
+      font-weight: 600;
+      color: $color-palette-primary;
+    }
+  }
+
+
+  h5 {
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
