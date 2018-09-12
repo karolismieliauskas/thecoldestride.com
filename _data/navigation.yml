@@ -3,7 +3,7 @@ menu_toggle: Explore
 items:
   - name: Ride Details
     url: /home.html
-  - name: About Karolis
+  - name: About Me
     url: /about-karolis.html
   - name: Previous Adventures
     items:
