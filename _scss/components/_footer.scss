@@ -19,7 +19,7 @@
 .footer__subtitle {
   padding: 1rem 0 3rem;
 
-  @include tablet() {
+  @include phablet() {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +30,7 @@
   padding: 1.5rem 0;
   border-top: solid 1px rgba($color-text-primary-inverse, 0.1);
 
-  @include tablet() {
+  @include phablet() {
     text-align: left;
   }
 }

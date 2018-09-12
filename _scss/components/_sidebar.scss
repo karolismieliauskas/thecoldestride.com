@@ -1,5 +1,5 @@
 .sidebar {
-  @include tablet() {
+  @include phablet() {
     position: absolute;
     z-index: 1;
     right: 2rem;

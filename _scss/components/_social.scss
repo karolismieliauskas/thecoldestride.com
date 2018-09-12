@@ -13,7 +13,7 @@
     margin-bottom: 0.5rem;
   }
 
-  @include tablet() {
+  @include phablet() {
     display: inline-block;
 
     &:not(:last-child) {
@@ -40,7 +40,7 @@
     background: rgba(#fff, 0.25);
   }
 
-  @include tablet() {
+  @include phablet() {
     width: auto;
   }
 

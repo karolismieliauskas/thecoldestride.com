@@ -83,13 +83,13 @@
 }
 
 .hero__header {
-  @include tablet() {
+  @include phablet() {
     width: $width;
   }
 }
 
 .hero__header--centered {
-  @include tablet() {
+  @include phablet() {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -101,7 +101,7 @@
   margin: 0 0 2rem;
   font-size: 40px;
 
-  @include tablet() {
+  @include phablet() {
     font-size: 50px;
   }
 }

@@ -1,5 +1,5 @@
 .flag {
-  @include tablet() {
+  @include phablet() {
     display: table;
     width: 100%;
     vertical-align: middle;
@@ -7,7 +7,7 @@
 }
 
 .flag__content {
-  @include tablet() {
+  @include phablet() {
     display: table-cell;
     width: auto;
     vertical-align: inherit;
@@ -17,7 +17,7 @@
 .flag__suffix {
   margin-top: 1rem;
 
-  @include tablet() {
+  @include phablet() {
     display: table-cell;
     white-space: nowrap;
     vertical-align: inherit;

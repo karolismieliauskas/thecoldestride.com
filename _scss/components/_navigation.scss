@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
 
-  @include tablet() {
+  @include phablet() {
     height: 68px;
   }
 }
@@ -12,7 +12,7 @@
   display: block;
   position: relative;
 
-  @include tablet() {
+  @include phablet() {
     display: inline-block;
     height: 100%;
 

@@ -29,7 +29,7 @@
   font-size: 0;
   border-radius: inherit;
 
-  @include tablet() {
+  @include phablet() {
     height: 100%;
     padding: 0;
 
@@ -53,7 +53,7 @@
     margin: 0;
   }
 
-  @include tablet() {
+  @include phablet() {
     overflow: hidden;
     align-self: stretch;
     max-width: 100%;

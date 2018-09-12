@@ -14,7 +14,7 @@ $card-shadow-active: 0 4px 8px 0 rgba(146, 152, 160, 0.17), $card-shadow;
   border-radius: $card-border-radius;
   min-height: 100%;
 
-  @include tablet() {
+  @include phablet() {
     padding: $card-padding-tablet;
   }
 
@@ -71,7 +71,7 @@ $card-shadow-active: 0 4px 8px 0 rgba(146, 152, 160, 0.17), $card-shadow;
   right: $card-padding;
   transform: translateY(-50%);
 
-  @include tablet() {
+  @include phablet() {
     right: $card-padding-tablet;
   }
 }

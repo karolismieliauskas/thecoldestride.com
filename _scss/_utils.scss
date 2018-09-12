@@ -19,7 +19,7 @@
     display: none !important;
   }
 
-  @include tablet() {
+  @include phablet() {
     display: none !important;
   }
 }

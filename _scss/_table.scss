@@ -16,7 +16,7 @@ th {
   font-size: 0.75rem;
   color: $color-text-mutted;
 
-  @include tablet() {
+  @include phablet() {
     padding: 1.5rem 1rem;
     background-color: rgba($color-ui-details, 0.2);
     font-size: 1.75rem;
@@ -44,7 +44,7 @@ td {
     padding-right: 0.5rem;
   }
 
-  @include tablet() {
+  @include phablet() {
     padding-left: 1rem;
     padding-right: 1rem;
 

@@ -4,7 +4,7 @@
   font-size: 0.75em;
   opacity: 0.5;
 
-  @include tablet() {
+  @include phablet() {
     position: absolute;
     top: -1000px;
     left: -1rem;
@@ -46,7 +46,7 @@
   padding: 1rem 0.5rem;
   line-height: 1.25;
 
-  @include tablet() {
+  @include phablet() {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 

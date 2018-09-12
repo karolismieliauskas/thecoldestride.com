@@ -12,7 +12,7 @@
   }
 }
 
-@mixin tablet() {
+@mixin phablet() {
   @media only screen and (min-width: ($layout-breakpoint-phone + 1)) {
     @content;
   }
@@ -162,7 +162,7 @@
     background: url('/images/icons/check.svg') 0 0 no-repeat;
     background-size: contain;
 
-    @include tablet() {
+    @include phablet() {
       // left: ($layout-column-size - $bullet-list-icon-size - 20px)
     }
   }

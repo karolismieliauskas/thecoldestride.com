@@ -9,7 +9,7 @@ $header-brand-height: 2rem;
   line-height: 0.9;
   font-weight: 900;
 
-  @include tablet() {
+  @include phablet() {
     top: 2rem;
   }
 }
@@ -25,7 +25,7 @@ $header-brand-height: 2rem;
   color: $color-text-primary;
   text-decoration: none;
 
-  @include tablet() {
+  @include phablet() {
     width: 133px;
   }
 }
@@ -38,7 +38,7 @@ $header-brand-height: 2rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  @include tablet() {
+  @include phablet() {
     border-radius: 5px;
   }
 }

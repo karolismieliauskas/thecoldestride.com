@@ -33,7 +33,7 @@ $button-padding-y-medium: 0.85rem;
     text-decoration: none !important;
   }
 
-  @include tablet() {
+  @include phablet() {
     width: auto;
   }
 }

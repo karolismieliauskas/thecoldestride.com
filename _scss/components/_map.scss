@@ -6,7 +6,7 @@
   margin: -120px 0 0 -55%;
   max-width: 200%;
 
-  @include tablet() {
+  @include phablet() {
     margin-left: -120px;
     margin-top: -40px;
     max-width: 795px;
@@ -35,7 +35,7 @@
 
 
 
-  @include tablet() {
+  @include phablet() {
     position: absolute;
     width: 210px;
     z-index: 10;
