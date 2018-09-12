@@ -41,6 +41,12 @@
 
   &:hover,
   &--current {
+    @at-root {
+      span#{&} {
+        cursor: s-resize
+      }
+    }
+
     &:not(span) {
       border-color: currentColor;
     }
