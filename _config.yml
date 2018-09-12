@@ -16,7 +16,7 @@ languages: ["en", "lt"]
 exclude_from_localizations: ["css", "fonts", "images"]
 
 forms:
-  contact: https://formspree.io/hello@edvinas.lt
+  contact: https://formspree.io/karolis@thecoldestride.com
   newsletter: https://thecoldestride.us19.list-manage.com/subscribe/post?u=63a300643885f0ff16e144794&amp;id=9fa6dba6cd
 
 analytics:
