@@ -5,4 +5,5 @@ $layout-inset: 8vw;
 $layout-column-size: ($layout-container-width + (2 * $layout-gutter-width)) / $layout-columns-count;
 
 $layout-breakpoint-phone: 540px;
+$layout-breakpoint-phablet: 780px;
 $layout-breakpoint-tablet: 960px;
