@@ -61,16 +61,18 @@ permalink: /home.html
         {{ keys.rider.body | markdownify }}
       </section>
 
-      <section class="article__section">
+      <section class="grid">
         {% assign keys = site.data.navigation %}
         {% for item in keys.items %}
 
           {% if item.items %}
             {% for subitem in item.items %}
-            <a href="/adventures/{{ subitem.id }}.html" class="media">
+              <a href="/adventures/{{ subitem.id }}.html" class="media">
                 <img class="media__image" src="/images/adventures/{{ subitem.id }}/thumb.jpg" alt="">
-                <h4>{{ subitem.name }}</h4>
-                <p>{{ subitem.description }}</p>
+                <div class="media__caption">
+                  <h4>{{ subitem.name }}</h4>
+                  <p>{{ subitem.description }}</p>
+                </div>
               </a>
             {% endfor %}
           {% endif %}

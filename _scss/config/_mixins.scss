@@ -173,3 +173,12 @@
   border: solid 1px $color-ui-details;
   box-shadow: $card-shadow;
 }
+
+@mixin pressable() {
+  @at-root {
+    a#{&},
+    button#{&} {
+      @content;
+    }
+  }
+}

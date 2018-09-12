@@ -1,10 +1,10 @@
 .media {
-  position: relative;
   display: block;
+  position: relative;
+  height: 100%;
+
   text-decoration: none;
   color: inherit;
-  height: 160px;
-  padding: 2rem 12rem 2rem;
   background: rgba(#fff, 0.9);
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
   border-radius: 5px;
@@ -12,21 +12,31 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  & + & {
-    margin-top: 2rem;
+  transition: all 150ms ease-in-out;
+
+  @include pressable() {
+    &:hover {
+      box-shadow: 0 3px 16px  rgba(0,0,0,0.15),
+                  0 1px 1px   rgba(0,0,0,0.05);
+      transform: translateY(-0.25rem);
+    }
   }
 
-  @include tablet() {
-    width: 60%;
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+
+    @include tablet() {
+      margin-bottom: 0;
+    }
   }
 }
 
-
 .media__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 160px;
-  height: 160px;
+  width: 100%;
   object-fit: cover;
+}
+
+
+.media__caption {
+  padding: 1rem;
 }
