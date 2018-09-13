@@ -27,8 +27,8 @@ permalink: /home.html
               <ol class="map__steps">
                 {% for step in site.data.map.steps %}
                   <li class="map__step" data-mark="{{ step.temp }}">
-                    <h5>{{ step.title }}</h5>
-                    <p>{{ step.body }}</p>
+                    <h5 class="map__label">{{ step.title }}</h5>
+                    <p class="map__body">{{ step.body }}</p>
                   </li>
                 {% endfor %}
               </ol>
