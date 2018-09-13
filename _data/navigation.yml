@@ -12,8 +12,8 @@ items:
         description: Across the frozen lake Baikal
         id: baikal
       - name: Magic '1000 km a day' ride
-        subtitle: Vilnius - Vladivostok 11000km
-        description: Vilnius - Vladivostok 11000km
+        subtitle: 11000km meditation to Vladivostok
+        description: 11000km meditation to Vladivostok 
         id: vladivostok
       - name: Ride to the desert
         subtitle: 5000 km in Morocco
