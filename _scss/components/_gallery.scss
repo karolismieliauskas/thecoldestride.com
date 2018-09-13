@@ -10,6 +10,10 @@
 
   border-radius: 5px;
 
+  @include phablet() {
+    width: 90vw;
+  }
+
   @include desktop() {
     @include ratio(16, 6.5);
     width: ($layout-container-width - 40px);

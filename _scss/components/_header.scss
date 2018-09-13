@@ -1,6 +1,8 @@
 $header-brand-height: 2rem;
 
 .header {
+  table-layout: fixed;
+
   position: fixed;
   z-index: 20;
   max-width: 100%;
@@ -10,7 +12,11 @@ $header-brand-height: 2rem;
   font-weight: 900;
 
   @include phablet() {
+    display: block;
+    width: auto;
     top: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;
   }
 }
 

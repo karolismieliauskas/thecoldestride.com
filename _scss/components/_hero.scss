@@ -84,14 +84,23 @@
 
 .hero__header {
   @include phablet() {
+    width: 90%;
+  }
+
+  @include tablet() {
     width: $width;
   }
 }
 
 .hero__header--centered {
-  @include phablet() {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet() {
+    width: 90%;
+  }
+
+  @include tablet() {
     width: 70%;
   }
 }

@@ -66,7 +66,7 @@ ul.article__subtitle {
   font-size: 1.25rem;
   line-height: 1.45;
 
-  @include phablet() {
+  @include tablet() {
     width: $width;
   }
 
@@ -109,9 +109,14 @@ ul.article__subtitle {
 
 
 .article__body--centered {
+  margin-left: auto;
+  margin-right: auto;
+
   @include phablet() {
+    width: 90%;
+  }
+
+  @include tablet() {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
