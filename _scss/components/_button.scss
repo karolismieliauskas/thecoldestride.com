@@ -43,6 +43,23 @@ $button-padding-y-medium: 0.85rem;
   font-size: 16px;
 }
 
+.button--large {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+
+  @include phablet() {
+    width: auto;
+  }
+
+  svg {
+    margin-top: -0.2em;
+    margin-right: 0.25em;
+  }
+}
+
+
 .button--block {
   width: 100%;
 }
