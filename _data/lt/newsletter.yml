@@ -1,11 +1,11 @@
 hero:
-  title: Get updates in your inbox
+  title: Skaitykite naujienas el. pašte
 body: |
-  Enter your email bellow and I'll email you updates about my adventures. I hate spam, so I'll never spam you or share your details with anyone
+  Įveskite savo el. pašto adresą ir atsiųsiu jums naujienas apie kelionę. Nemėgstu šlamšto, todėl jo niekada jums ir nesiųsiu. Taip pat su niekuo nesidalinsiu jūsų duomenimis. 
 
-  <small>(I use MailChimp to manage subscribers list - your details will be stored safely there)</small>
+  <small>(Naudoju MailChimp naujienų gavėjų sąrašui valdyti, tad jūsų duomenys čia talpinami saugiai)</small>
 form:
   email:
-    label: Your email address*
+    label: Jūsų el. pašto adresas*
     placeholder: ""
   action: Subscribe
