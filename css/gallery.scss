@@ -1,0 +1,9 @@
+---
+---
+@import "libs/photoswipe/main.scss";
+@import "libs/photoswipe/default-skin/default-skin.scss";
+
+.pswp {
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
