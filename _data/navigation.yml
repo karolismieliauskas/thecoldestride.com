@@ -2,20 +2,20 @@ title: The Coldest Ride
 menu_toggle: Explore
 items:
   - name: Ride Details
-    url: /
+    url: /index.html
   - name: About Me
     url: /about-karolis.html
   - name: Previous Adventures
     items:
-      - name: Across the frozen lake Baikal                        
+      - name: Across the frozen lake Baikal
         subtitle: Ride on the ice
         description: Ride on the ice
         id: baikal
-      - name: 11000km meditation to Vladivostok                                          
+      - name: 11000km meditation to Vladivostok
         subtitle: Magic '1000 km a day' ride
-        description: Magic '1000 km a day' ride 
+        description: Magic '1000 km a day' ride
         id: vladivostok
-      - name: 5000 km in Morocco                                
+      - name: 5000 km in Morocco
         subtitle: Ride to the desert
         description: Ride to the desert
         id: morocco
