@@ -21,7 +21,7 @@ form:
   email: karolis@thecoldestride.com
   message:
     label: Žinutė *
-    placeholder: Savo idėją rašykite čia:
+    placeholder: "Savo idėją rašykite čia:"
   contact:
     label: El. pašto adresas *
     note: (nesijaudinkite, jūsų duomenimis su niekuo nesidalinsiu, pažadu)
