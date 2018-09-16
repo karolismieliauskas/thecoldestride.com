@@ -1,14 +1,14 @@
 hero:
-  title: Get in touch
+  title: Įsitraukite
 body: |
-  I'm always curious to receive messages from companies, schools, communities, fellow riders, fans or possible partners, who would like to work with me or have interesting ideas. Feel free to ask questions, share your ideas or invite me to speak in your event! - I'll be happy to hear from you.
+  Man visada smalsu gauti laiškus iš įmonių, mokyklų, bendruomenių, motociklininkų, fanų ar potencialių partnerių, tų kas norėtų dirbti su manimi arba turi įdomių idėjų. Drąsiai klauskite, dalinkitės savo idėjomis ar pasikvieskite mane kalbėti jūsų renginyje!
 form:
   message:
-    label: "Enter your message for me:"
+    label: "Savo idėją rašykite čia:"
     placeholder: ""
   contact:
-    label: Your email address*
-    note: (no worries, your details won't be shared with anyone, i promise)
+    label: Jūsų el. pašto adresas*
+    note: (nesijaudinkite, duomenimis apie jus su niekuo nesidalinsiu, pažadu)
     placeholder: ""
-  action: Send message
+  action: Siųsti
 subject: New entry in thecoldestride.com
