@@ -3,12 +3,12 @@
   <div class="gallery__items">
     {% for i in (1..image_count) %}
       {% assign src = "/images/adventures/{{name}}/{{i}}.jpg" | replace: "{{name}}", include.page | replace: "{{i}}", i %}
-      <figure>
-      <a href="{{src}}" data-size="1600x900" class="gallery__item">
-        <img class="gallery__image"
-             src="{{ src }}"
-             alt="Picture of me in {{ include.page | captitalize }}">
-      </a>
+      <figure class="gallery__item">
+        <a href="{{src}}" data-size="1600x900" class="gallery__link">
+          <img class="gallery__image"
+               src="{{ src }}"
+               alt="Picture of me in {{ include.page | captitalize }}">
+        </a>
       </figure>
     {% endfor %}
   </div>
