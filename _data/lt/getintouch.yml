@@ -8,7 +8,7 @@ form:
     placeholder: ""
   contact:
     label: Jūsų el. pašto adresas*
-    note: (nesijaudinkite, duomenimis apie jus su niekuo nesidalinsiu, pažadu)
+    note: (nesijaudinkite, jūsų duomenimis su niekuo nesidalinsiu, pažadu)
     placeholder: ""
   action: Siųsti
 subject: New entry in thecoldestride.com
