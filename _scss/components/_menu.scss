@@ -88,6 +88,19 @@
       display: block;
     }
 
+    &:before {
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+
+      content: attr(data-title);
+
+      text-transform: uppercase;
+      width: 50px;
+      font-size: 14px;
+      line-height: 0.9;
+    }
+
     .navigation {
       position: relative;
       top: 50%;
