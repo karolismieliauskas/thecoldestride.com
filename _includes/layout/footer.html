@@ -1,4 +1,8 @@
-{% assign keys = site.data.footer %}
+{% if page.lang %}
+  {% assign keys = site.data[page.lang]footer %}
+{% else %}
+  {% assign keys = site.data.footer %}
+{% endif %}
 
 <section class="footer">
   <div class="container">

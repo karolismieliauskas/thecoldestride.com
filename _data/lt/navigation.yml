@@ -2,9 +2,9 @@ title: The Coldest Ride
 menu_toggle: Susipažink
 items:
   - name: Apie kelionę
-    url: /
+    url: /lt/index.html
   - name: Apie mane
-    url: /about-karolis.html
+    url: /lt/about-karolis.html
   - name: Ankstesnės kelionės
     items:
       - name: Kelionė ledu
@@ -19,7 +19,6 @@ items:
         subtitle: 5000 km Maroke
         description: 5000 km Maroke
         id: morocco
-
-  - name: Get Involved
-    url: /get-involved.html
+  - name: Padėk įgyvendinti
+    url: /lt/get-involved.html
 

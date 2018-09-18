@@ -1,3 +1,5 @@
+{% include root.html %}
+
 <form class="banner banner--mutted form" action="{{ site.forms.contact }}" method="post">
   <div class="banner__body">
     <fieldset class="form__fieldset">
@@ -5,7 +7,7 @@
       {% include components/form/row.html name="_replyto" type="email" props=include.keys.form.contact %}
 
       <input type="hidden" name="_subject" value="{{ keys.subject }}">
-      <input type="hidden" name="_next" value="/thanks.html">
+      <input type="hidden" name="_next" value="{{ root }}/thanks.html">
       <input type="text" name="_gotcha" style="display:none;">
     </fieldset>
 

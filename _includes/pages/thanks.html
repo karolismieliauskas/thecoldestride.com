@@ -1,4 +1,5 @@
 {% include keys.html %}
+{% include root.html %}
 
 {% include layout/hero.html
            centered=true
@@ -16,7 +17,7 @@
 
       <section class="article__section">
         <div class="article__body article__body--centered">
-          <a class="button button--medium" href="/">{{ keys.action }}</a>
+          <a class="button button--medium" href="{{ root }}/">{{ keys.action }}</a>
         </div>
       </section>
     </article>

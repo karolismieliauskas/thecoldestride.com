@@ -1,0 +1,5 @@
+{% if page.lang %}
+  {% assign root = "/" | append: page.lang %}
+{% else %}
+  {% assign root = "" %}
+{% endif %}

@@ -1,4 +1,10 @@
-{% assign keys = site.data.navigation %}
+{% if page.lang %}
+  {% assign keys = site.data[page.lang]navigation %}
+{% else %}
+  {% assign keys = site.data.navigation %}
+{% endif %}
+
+{% include root.html %}
 
 <section class="header flag">
   <div class="container">
@@ -6,9 +12,9 @@
       <figure class="flag__content">
         {% assign home = site.baseurl %}
         {% if home == "" %}
-          {% assign home = '/' %}
+          {% assign home = "" %}
         {% endif %}
-        <a href="{{ home }}" class="header__logo">
+        <a href="{{ root }}/{{ home }}" class="header__logo">
           {{ keys.title | replace: " ", "<br>" }}
         </a>
       </figure>
@@ -38,7 +44,7 @@
                     <ul class="dropdown">
                       {% for subitem in item.items %}
                         <li class="dropdown__item">
-                          <a class="dropdown__link {% if page.url == item.url %}dropdown__link--current{% endif %}" href="/adventures/{{ subitem.id }}.html">
+                          <a class="dropdown__link {% if page.url == item.url %}dropdown__link--current{% endif %}" href="{{ root }}/adventures/{{ subitem.id }}.html">
                             {{ subitem.name }}
                             <span class="dropdown__subtitle desktop-only">{{ subitem.subtitle }}</span>
                           </a>
