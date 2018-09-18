@@ -39,11 +39,24 @@
   border-bottom: solid 4px transparent;
   line-height: 1;
 
+  &:not(a) {
+    @include phone() {
+      font-size: 0.5em;
+      opacity: 0.25;
+      margin-top: 0.5rem;
+      margin-bottom: -1rem;
+
+      &:after {
+        content: ":";
+      }
+    }
+  }
+
   &:hover,
   &--current {
     @at-root {
       span#{&} {
-        cursor: s-resize
+        cursor: s-resize;
       }
     }
 

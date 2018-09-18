@@ -1,8 +1,9 @@
 .dropdown {
-  margin: 0 0 2rem 0;
-  padding: 0;
-  font-size: 0.75em;
-  opacity: 0.5;
+  margin: 0 0 1.25rem 0;
+  padding: 1rem 0 1rem 0;
+  border-top: solid 1px rgba($color-text-primary-inverse, 0.25);
+  border-bottom: solid 1px rgba($color-text-primary-inverse, 0.25);
+  opacity: 0.8;
 
   @include phablet() {
     position: absolute;
@@ -13,13 +14,14 @@
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
     border-radius: 0 0 5px 5px;
     list-style: none;
+    border-bottom: 0;
+    border-top: 0;
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     opacity: 1;
 
     text-align: left;
-    font-size: inherit;
 
     :hover > & {
       top: 100%;
