@@ -1,0 +1,78 @@
+{% include keys.html %}
+
+{% include layout/hero.html
+           theme=page.namespace
+           title=keys.hero.title
+           subtitle=keys.hero.subtitle %}
+
+<div class="bg">
+  <div class="container">
+    <article class="article">
+      <section class="article__section">
+        <section class="article__body">
+          <h1 class="article__title">
+            {{ keys.intro.title }}
+          </h1>
+
+          {{ keys.intro.body | markdownify }}
+
+          <figure class="map">
+            <figcaption class="map__details">
+              <ol class="map__steps">
+                {% for step in site.data.map.steps %}
+                  <li class="map__step" data-mark="{{ step.temp }}">
+                    <h5 class="map__label">{{ step.title }}</h5>
+                    <p class="map__body">{{ step.body }}</p>
+                  </li>
+                {% endfor %}
+              </ol>
+            </figcaption>
+            {% include svg/map.svg %}
+          </figure>
+
+
+          <aside class="sidebar">
+            {% assign body = keys.banner.body | markdownify %}
+            {% include components/banner.html
+                       aside=true
+                       title=keys.banner.title
+                       body=body
+                       cta=keys.banner.action
+                       href="/get-involved.html" %}
+
+            {% include partners.html %}
+          </aside>
+        </section>
+    </article>
+
+
+    <article class="article">
+      <section class="article__body">
+        <h1 class="article__title">
+          {{ keys.rider.title }}
+        </h1>
+
+        {{ keys.rider.body | markdownify }}
+      </section>
+
+      <section class="grid">
+        {% assign keys = site.data.navigation %}
+        {% for item in keys.items %}
+
+          {% if item.items %}
+            {% for subitem in item.items %}
+              <a href="/adventures/{{ subitem.id }}.html" class="media">
+                <img class="media__image" src="/images/adventures/{{ subitem.id }}/thumb.jpg" alt="">
+                <div class="media__caption">
+                  <h4>{{ subitem.name }}</h4>
+                  <p>{{ subitem.description }}</p>
+                </div>
+              </a>
+            {% endfor %}
+          {% endif %}
+          </li>
+        {% endfor %}
+      </section>
+    </article>
+  </div>
+</div>

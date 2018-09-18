@@ -4,27 +4,4 @@ namespace: getintouch
 permalink: /get-in-touch.html
 ---
 
-{% assign keys = site.data[page.namespace] %}
-
-{% include layout/hero.html
-           centered=true
-           title=keys.hero.title
-           subtitle="" %}
-
-<div class="bg">
-  <div class="container">
-    <article class="article">
-      <section class="article__section">
-        <div class="article__body article__body--centered">
-          {{ keys.body | markdownify }}
-        </div>
-      </section>
-
-      <section class="article__section">
-        <div class="article__body article__body--centered">
-          {% include/form.html keys=keys %}
-        </div>
-      </section>
-    </article>
-  </div>
-</div>
+{% include pages/get-in-touch.html %}

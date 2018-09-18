@@ -5,32 +5,4 @@ permalink: /adventures/morocco.html
 is_gallery: true
 ---
 
-{% assign keys = site.data[page.namespace] %}
-
-{% include layout/hero.html
-           centered=true
-           theme=page.namespace
-           title=keys.hero.title
-           subtitle="" %}
-
-<div class="bg">
-  <div class="container">
-    <article class="article">
-      <section class="article__section">
-        <div class="article__body article__body--centered">
-          {{ keys.body | markdownify }}
-        </div>
-      </section>
-
-      <section class="article__section">
-        {% include gallery.html page=page.namespace %}
-      </section>
-
-      <section class="article__section">
-        <header class="article__body article__body--centered">
-          {% include banner.html %}
-        </header>
-      </section>
-    </article>
-  </div>
-</div>
+{% include pages/morocco.html %}

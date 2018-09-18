@@ -4,33 +4,4 @@ namespace: about
 permalink: /about-karolis.html
 ---
 
-{% assign keys = site.data[page.namespace] %}
-
-{% include layout/hero.html
-           theme=page.namespace
-           title=keys.hero.title
-           subtitle="" %}
-
-<div class="bg">
-  <div class="container">
-    <article class="article">
-      <section class="article__body">
-        {% capture banner %}
-          </p>
-
-          <aside class="sidebar">
-            {% assign body = keys.banner.body | markdownify %}
-            {% include components/banner.html
-                       aside=true
-                       title=keys.banner.title
-                       body=body
-                       cta=keys.banner.action
-                       href="/get-in-touch.html" %}
-          </aside>
-        {% endcapture %}
-
-        {{ keys.body | markdownify | replace_first: "</p>", banner }}
-      </section>
-    </article>
-  </div>
-</div>
+{% include pages/about.html %}

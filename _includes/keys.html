@@ -1,0 +1,5 @@
+{% if page.lang %}
+  {% assign keys = site.data[page.lang][page.namespace] %}
+{% else %}
+  {% assign keys = site.data[page.namespace] %}
+{% endif %}
