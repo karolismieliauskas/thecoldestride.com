@@ -1,5 +1,9 @@
 {% include root.html %}
-{% assign keys = site.data.promo.banner %}
+{% if page.lang %}
+  {% assign keys = site.data[page.lang]promo.banner %}
+{% else %}
+  {% assign keys = site.data.promo.banner %}
+{% endif %}
 {% assign body = keys.body | markdownify %}
 {% include components/banner.html
            title=keys.title
