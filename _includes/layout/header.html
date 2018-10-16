@@ -1,22 +1,27 @@
 {% if page.lang %}
   {% assign keys = site.data[page.lang]navigation %}
+  {% assign switch_lang = page.url | replace_first: page.lang, "" | replace_first: "/", "" %}
 {% else %}
   {% assign keys = site.data.navigation %}
+  {% assign switch_lang = "/lt" | append: page.url %}
 {% endif %}
 
 {% include root.html %}
 
 <section class="header flag">
   <div class="container">
-    <div class="header__content flag">
+    <div class="header__content flag flag--filled">
       <figure class="flag__content">
-        {% assign home = site.baseurl %}
-        {% if home == "" %}
-          {% assign home = "" %}
-        {% endif %}
-        <a href="{{ root }}/{{ home }}" class="header__logo">
-          {{ keys.title | replace: " ", "<br>" }}
-        </a>
+        <span class="brand">
+          {% assign home = site.baseurl %}
+          {% if home == "" %}
+            {% assign home = "" %}
+          {% endif %}
+          <a class="header__logo brand__logo" href="{{ root }}/{{ home }}">
+            {{ keys.title | replace: " ", "<br>" }}
+          </a>
+          <a class="brand__tab" href="{{ switch_lang }}">{{ keys.translate }} &rarr;</a>
+        </span>
       </figure>
 
       <nav class="flag__suffix">

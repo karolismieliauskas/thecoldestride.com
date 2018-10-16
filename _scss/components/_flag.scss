@@ -11,6 +11,10 @@
     display: table-cell;
     width: auto;
     vertical-align: inherit;
+
+    .flag--filled & {
+      height: 100%;
+    }
   }
 }
 
