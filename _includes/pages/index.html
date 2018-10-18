@@ -57,9 +57,13 @@
       </section>
 
       <section class="grid">
-        {% assign keys = site.data.navigation %}
-        {% for item in keys.items %}
+        {% if page.lang %}
+          {% assign keys = site.data[page.lang]navigation %}
+        {% else %}
+          {% assign keys = site.data.navigation %}
+        {% endif %}
 
+        {% for item in keys.items %}
           {% if item.items %}
             {% for subitem in item.items %}
               <a href="{{ root }}/adventures/{{ subitem.id }}.html" class="media">
