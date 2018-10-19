@@ -2,9 +2,12 @@ title: Sekite mano nuotykius!
 subtitle: "Aš dalinsiuos detalėmis, nuotraukomis ir visomis naujienomis online. Galite sekti mane jums patogiu būdu:"
 meta:
   title: The Coldest Ride.
-  subtitle: Kelionė į šalčiausią vietą pasaulyje. Motociklu. 
+  subtitle: Kelionė į šalčiausią vietą pasaulyje. Motociklu.
 copyright: 2018 &copy; Karolis Mieliauskas
 social:
+  - title: "Youtube"
+    id: youtube
+    url: "https://www.youtube.com/channel/UCmOhIlh4YmZFGYX-OgbTPlQ"
   - title: "Facebook"
     id: facebook
     url: "https://www.facebook.com/thecoldestride/"
