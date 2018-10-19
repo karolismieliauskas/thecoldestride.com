@@ -5,6 +5,9 @@ meta:
   subtitle: Reaching the coldest spot on earth on motorbike
 copyright: 2018 &copy; Karolis Mieliauskas
 social:
+  - title: "Youtube"
+    id: youtube
+    url: "https://www.youtube.com/channel/UCmOhIlh4YmZFGYX-OgbTPlQ"
   - title: "Facebook"
     id: facebook
     url: "https://www.facebook.com/thecoldestride"
