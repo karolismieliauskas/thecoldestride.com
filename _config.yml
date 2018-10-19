@@ -22,3 +22,5 @@ forms:
 analytics:
   ga:
     id: UA-125482278-1
+  fb:
+    id: 255381175139812
