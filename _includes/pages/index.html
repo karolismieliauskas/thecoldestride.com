@@ -1,5 +1,6 @@
 {% include keys.html %}
 {% include root.html %}
+{% include i18n.html %}
 
 {% include layout/hero.html
            theme=page.namespace
@@ -57,12 +58,7 @@
       </section>
 
       <section class="grid">
-        {% if page.lang %}
-          {% assign keys = site.data[page.lang]navigation %}
-        {% else %}
-          {% assign keys = site.data.navigation %}
-        {% endif %}
-
+        {% assign keys = i18n.navigation %}
         {% for item in keys.items %}
           {% if item.items %}
             {% for subitem in item.items %}

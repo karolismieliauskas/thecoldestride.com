@@ -1,0 +1,5 @@
+{% if page.lang %}
+  {% assign i18n = site.data[page.lang] %}
+{% else %}
+  {% assign i18n = site.data %}
+{% endif %}

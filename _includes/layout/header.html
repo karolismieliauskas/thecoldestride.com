@@ -1,12 +1,12 @@
 {% if page.lang %}
-  {% assign keys = site.data[page.lang]navigation %}
   {% assign switch_lang = page.url | replace_first: page.lang, "" | replace_first: "/", "" %}
 {% else %}
-  {% assign keys = site.data.navigation %}
   {% assign switch_lang = "/lt" | append: page.url %}
 {% endif %}
 
+{% include i18n.html %}
 {% include root.html %}
+{% assign keys = i18n.navigation %}
 
 <section class="header flag">
   <div class="container">
