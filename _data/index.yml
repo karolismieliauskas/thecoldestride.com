@@ -18,10 +18,8 @@ rider:
 
     Learn more about me in <a href="/about-karolis.html">about page</a> or check some of my previous adventures:
 banner:
-  title: Be part of this
+  title: Help make this journey a reality.
   body: |
-    Help make this epic journey a reality. I am looking for you!
-
     **For companies.** I am looking for partners, who can help fund the adventure in exchange to brand and product promotion.
 
     **For individuals.** If you are mechanic, film maker, marketer or have ideas how to make this even more epic, i would love to hear from you.
@@ -29,4 +27,4 @@ banner:
     **For media.** Would you like to receive news first or interested in exclusive content? Let's agree.
   action: Get involved
 partners:
-  body: "Big thanks to my friends and partners, who support me and encourage to keep going:"
+  body: "Big thanks to my friends and partners, who support me and keeps me going:"
