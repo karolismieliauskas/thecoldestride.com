@@ -16,7 +16,7 @@
   height: 665px;
   margin: 0 auto;
   position: relative;
-  background: url(/images/partners.png) 0 0 no-repeat;
+  background: url(/images/partners.png?v=2) 0 0 no-repeat;
   background-size: cover;
 }
 
@@ -170,5 +170,12 @@
     height: 36px;
     top: 628px;
     left: 12px;
+  }
+
+  &:nth-child(22) {
+    width: 106px;
+    height: 23px;
+    top: 633px;
+    left: 127px;
   }
 }
