@@ -1,6 +1,5 @@
 .partners {
   position: relative;
-  margin-bottom: 4rem;
 }
 
 .partners__body {
@@ -13,16 +12,17 @@
 
 .partners__logos {
   width: 240px;
-  height: 665px;
+  height: 706px;
   margin: 0 auto;
   position: relative;
-  background: url(/images/partners.png?v=2) 0 0 no-repeat;
+  background: url(/images/partners.png?v=3) 0 0 no-repeat;
   background-size: cover;
 }
 
 .partners__link {
   position: absolute;
   height: 54px;
+  // background-color: rgba(255,0,0,0.25);
 
   &:nth-child(1) {
     height: 64px;
@@ -166,10 +166,10 @@
   }
 
   &:nth-child(21) {
-    width: 86px;
-    height: 36px;
-    top: 628px;
-    left: 12px;
+    width: 105px;
+    height: 22px;
+    top: 630px;
+    left: 0px;
   }
 
   &:nth-child(22) {
@@ -177,5 +177,19 @@
     height: 23px;
     top: 633px;
     left: 127px;
+  }
+
+  &:nth-child(23) {
+    width: 86px;
+    height: 36px;
+    top: 667px;
+    left: 12px;
+  }
+
+  &:nth-child(24) {
+    width: 71px;
+    height: 40px;
+    top: 664px;
+    left: 148px;
   }
 }
