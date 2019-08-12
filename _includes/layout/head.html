@@ -1,4 +1,10 @@
 <head>
+  {% if site.redirect %}
+  <script>
+    window.location.href = "{{site.redirect}}";
+  </script>
+  {% endif %}
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ site.baseurl_root }}/css/site.css?v=6">
